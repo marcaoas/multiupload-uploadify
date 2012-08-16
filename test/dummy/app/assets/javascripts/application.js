@@ -13,3 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+//= require jquery.uploadify-3.1
+//= provide dependencias

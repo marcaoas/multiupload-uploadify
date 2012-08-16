@@ -10,5 +10,6 @@
 
 <%= yield %>
 
+<%= content_for :scripts if content_for? :scripts %>
 </body>
 </html>
