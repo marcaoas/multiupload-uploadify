@@ -1,0 +1,1 @@
+require 'multiupload-uploadify/helper_methods'
