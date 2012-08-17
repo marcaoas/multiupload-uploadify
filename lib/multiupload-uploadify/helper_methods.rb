@@ -9,6 +9,7 @@ module MultiuploadUploadify
       script = <<-eos
         $(document).ready(function(){
           var data = new Object();
+          data[$("meta[name='csrf-param']").attr('content')] = $("meta[name='csrf-token']").attr('content');
         eos
       parameters.each do |parameter|
         script += "data['#{parameter[0].to_s}'] = '#{parameter[1].to_s}';"
