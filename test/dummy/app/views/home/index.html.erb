@@ -3,4 +3,9 @@
 		<li><%= link_to arquivo.file_file_name, arquivo.file.url %></li>
 	<% end %>
 </ul>
-<%= multiupload_field :id => 'multiupload',:url => teste_path %>
+<%= multiupload_field :url => teste_path, :parameters => { :teste => "123123"}, :options => { :onUploadSuccess => 'myFunction'} %>
+<script type="text/javascript">
+function myFunction(file, data, response){
+  alert(data);
+}
+</script>
