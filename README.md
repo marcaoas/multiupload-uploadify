@@ -52,11 +52,24 @@ render :text => photo.id
 ```
 
 and pass a javascript function responsible for handling the return of the request
-``` ruby
-<%= multiupload_field :url => teste_path, :upload_function => 'myFunction' %>
+``` erb
+<%= multiupload_field :url => new_photo_path, :options => { :onUploadSuccess =>  'myFunction' %>
 <script type="text/javascript">
 function myFunction(file, data, response){
 	alert(data);
 }
 </script>
+```
+
+any other parameter of the plugin you can pass using
+``` erb
+<%= multiupload_field :url => new_photo_path, :options => { :buttonText =>  '"Upload Photos"' %>
+```
+
+### devise + multiupload-uploadfy
+
+if you use the devise gem you need pass the parameters of your session for authentication
+you can do it like this:
+``` erb
+<%= multiupload_field :url => new_photo_path, :parameters => {Rails.application.config.session_options[:key] => cookies[Rails.application.config.session_options[:key]] } %>
 ```

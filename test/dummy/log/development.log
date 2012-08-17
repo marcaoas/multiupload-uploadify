@@ -788,3 +788,342 @@ Binary data inserted for `string` type on column `file_content_type`
   [1m[36m (305.5ms)[0m  [1mcommit transaction[0m
   Rendered text template (0.0ms)
 Completed 200 OK in 352ms (Views: 1.2ms | ActiveRecord: 306.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-17 10:55:59 -0400
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  [1m[36mArquivo Load (0.3ms)[0m  [1mSELECT "arquivos".* FROM "arquivos" [0m
+  Rendered home/index.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 173ms (Views: 110.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-17 10:56:00 -0400
+Served asset /home.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.uploadify-3.1.js?body=1" for 127.0.0.1 at 2012-08-17 10:56:00 -0400
+Served asset /jquery.uploadify-3.1.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/uploadify.css?body=1" for 127.0.0.1 at 2012-08-17 10:56:00 -0400
+Served asset /uploadify.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-17 10:56:00 -0400
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-17 10:56:25 -0400
+Processing by HomeController#index as HTML
+  [1m[35mArquivo Load (0.5ms)[0m  SELECT "arquivos".* FROM "arquivos" 
+  Rendered home/index.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 34ms (Views: 31.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-17 10:56:25 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploadify.css?body=1" for 127.0.0.1 at 2012-08-17 10:56:25 -0400
+Served asset /uploadify.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-17 10:56:25 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.uploadify-3.1.js?body=1" for 127.0.0.1 at 2012-08-17 10:56:25 -0400
+Served asset /jquery.uploadify-3.1.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/dependencies/uploadify.swf?preventswfcaching=1345215386005" for 127.0.0.1 at 2012-08-17 10:56:26 -0400
+Served asset /dependencies/uploadify.swf - 200 OK (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-17 10:56:26 -0400
+Processing by HomeController#index as */*
+  [1m[36mArquivo Load (0.6ms)[0m  [1mSELECT "arquivos".* FROM "arquivos" [0m
+  Rendered home/index.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 37ms (Views: 33.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-17 10:56:32 -0400
+Processing by HomeController#index as HTML
+  [1m[35mArquivo Load (0.5ms)[0m  SELECT "arquivos".* FROM "arquivos" 
+  Rendered home/index.html.erb within layouts/application (59.1ms)
+Completed 200 OK in 73ms (Views: 68.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-17 10:56:32 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-17 10:56:33 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploadify.css?body=1" for 127.0.0.1 at 2012-08-17 10:56:33 -0400
+Served asset /uploadify.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-17 10:56:33 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-17 10:56:33 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-17 10:56:33 -0400
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.uploadify-3.1.js?body=1" for 127.0.0.1 at 2012-08-17 10:56:33 -0400
+Served asset /jquery.uploadify-3.1.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-17 10:56:33 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/dependencies/uploadify.swf?preventswfcaching=1345215393071" for 127.0.0.1 at 2012-08-17 10:56:33 -0400
+Served asset /dependencies/uploadify.swf - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-17 10:56:33 -0400
+Processing by HomeController#index as */*
+  [1m[36mArquivo Load (0.6ms)[0m  [1mSELECT "arquivos".* FROM "arquivos" [0m
+  Rendered home/index.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 34ms (Views: 29.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-17 14:41:33 -0400
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  [1m[36mArquivo Load (0.2ms)[0m  [1mSELECT "arquivos".* FROM "arquivos" [0m
+  Rendered home/index.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 177ms (Views: 115.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-17 14:41:34 -0400
+Served asset /application.css - 200 OK (16ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-17 14:41:34 -0400
+Served asset /jquery.js - 200 OK (10ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-17 14:41:34 -0400
+Served asset /home.js - 200 OK (3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-17 14:41:34 -0400
+Served asset /home.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-17 14:41:34 -0400
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/uploadify.css?body=1" for 127.0.0.1 at 2012-08-17 14:41:34 -0400
+Served asset /uploadify.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.uploadify-3.1.js?body=1" for 127.0.0.1 at 2012-08-17 14:41:34 -0400
+Served asset /jquery.uploadify-3.1.js - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-17 14:41:34 -0400
+Served asset /application.js - 200 OK (10ms)
+
+
+Started GET "/assets/dependencies/uploadify.swf?preventswfcaching=1345228894563" for 127.0.0.1 at 2012-08-17 14:41:34 -0400
+Served asset /dependencies/uploadify.swf - 200 OK (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-17 14:41:34 -0400
+Processing by HomeController#index as */*
+  [1m[35mArquivo Load (0.6ms)[0m  SELECT "arquivos".* FROM "arquivos" 
+  Rendered home/index.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 70ms (Views: 65.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-17 14:41:44 -0400
+Processing by HomeController#index as HTML
+  [1m[36mArquivo Load (0.6ms)[0m  [1mSELECT "arquivos".* FROM "arquivos" [0m
+  Rendered home/index.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 34ms (Views: 30.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-17 14:41:44 -0400
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/uploadify.css?body=1" for 127.0.0.1 at 2012-08-17 14:41:44 -0400
+Served asset /uploadify.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-17 14:41:44 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-17 14:41:44 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-17 14:41:44 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-17 14:41:44 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-17 14:41:44 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.uploadify-3.1.js?body=1" for 127.0.0.1 at 2012-08-17 14:41:44 -0400
+Served asset /jquery.uploadify-3.1.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dependencies/uploadify.swf?preventswfcaching=1345228904395" for 127.0.0.1 at 2012-08-17 14:41:44 -0400
+Served asset /dependencies/uploadify.swf - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-17 14:41:44 -0400
+Processing by HomeController#index as */*
+  [1m[35mArquivo Load (0.6ms)[0m  SELECT "arquivos".* FROM "arquivos" 
+  Rendered home/index.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 35ms (Views: 30.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-17 14:42:06 -0400
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  [1m[36mArquivo Load (0.2ms)[0m  [1mSELECT "arquivos".* FROM "arquivos" [0m
+  Rendered home/index.html.erb within layouts/application (52.1ms)
+Completed 200 OK in 165ms (Views: 76.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-17 14:42:06 -0400
+Served asset /application.css - 304 Not Modified (53ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-17 14:42:06 -0400
+Served asset /home.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-17 14:42:06 -0400
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/uploadify.css?body=1" for 127.0.0.1 at 2012-08-17 14:42:07 -0400
+Served asset /uploadify.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-17 14:42:07 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-17 14:42:07 -0400
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.uploadify-3.1.js?body=1" for 127.0.0.1 at 2012-08-17 14:42:07 -0400
+Served asset /jquery.uploadify-3.1.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-17 14:42:07 -0400
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-17 14:43:44 -0400
+Processing by HomeController#index as HTML
+  [1m[35mArquivo Load (0.5ms)[0m  SELECT "arquivos".* FROM "arquivos" 
+  Rendered home/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 35ms (Views: 31.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-17 14:43:44 -0400
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-17 14:43:44 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploadify.css?body=1" for 127.0.0.1 at 2012-08-17 14:43:44 -0400
+Served asset /uploadify.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-17 14:43:44 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-17 14:43:44 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-17 14:43:45 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.uploadify-3.1.js?body=1" for 127.0.0.1 at 2012-08-17 14:43:45 -0400
+Served asset /jquery.uploadify-3.1.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-17 14:43:45 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-17 14:43:58 -0400
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  [1m[36mArquivo Load (0.2ms)[0m  [1mSELECT "arquivos".* FROM "arquivos" [0m
+  Rendered home/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 172ms (Views: 109.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-17 14:43:59 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-17 14:43:59 -0400
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-17 14:43:59 -0400
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-17 14:43:59 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/uploadify.css?body=1" for 127.0.0.1 at 2012-08-17 14:43:59 -0400
+Served asset /uploadify.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-17 14:43:59 -0400
+Served asset /home.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.uploadify-3.1.js?body=1" for 127.0.0.1 at 2012-08-17 14:43:59 -0400
+Served asset /jquery.uploadify-3.1.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-17 14:43:59 -0400
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/dependencies/uploadify.swf?preventswfcaching=1345229039201" for 127.0.0.1 at 2012-08-17 14:43:59 -0400
+Served asset /dependencies/uploadify.swf - 200 OK (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-17 14:43:59 -0400
+Processing by HomeController#index as */*
+  [1m[35mArquivo Load (0.7ms)[0m  SELECT "arquivos".* FROM "arquivos" 
+  Rendered home/index.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 45ms (Views: 39.8ms | ActiveRecord: 0.7ms)
