@@ -1,1 +1,6 @@
+<ul>
+	<% @arquivos.each do |arquivo| %>
+		<li><%= link_to arquivo.file_file_name, arquivo.file.url %></li>
+	<% end %>
+</ul>
 <%= multiupload_field :id => 'multiupload',:url => teste_path %>
