@@ -53,11 +53,7 @@ render :text => photo.id
 
 and pass a javascript function responsible for handling the return of the request
 ``` erb
-<<<<<<< HEAD
-<%= multiupload_field :url => new_photo_path, :upload_function => 'myFunction' %>
-=======
 <%= multiupload_field :url => new_photo_path, :options => { :onUploadSuccess =>  'myFunction' %>
->>>>>>> hotfix/correcoes_script_devise
 <script type="text/javascript">
 function myFunction(file, data, response){
 	alert(data);
