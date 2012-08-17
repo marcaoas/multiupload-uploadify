@@ -1,0 +1,494 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-16 11:45:22 -0400
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-16 11:45:23 -0400
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-16 11:45:23 -0400
+Served asset /home.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/uploadify.css?body=1" for 127.0.0.1 at 2012-08-16 11:45:23 -0400
+Served asset /uploadify.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-16 11:45:23 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-16 11:45:23 -0400
+Served asset /jquery.js - 304 Not Modified (35ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-16 11:45:23 -0400
+Served asset /home.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.uploadify-3.1.js?body=1" for 127.0.0.1 at 2012-08-16 11:45:23 -0400
+Served asset /jquery.uploadify-3.1.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-16 11:45:23 -0400
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/dependencies/uploadify.swf?preventswfcaching=1345131923657" for 127.0.0.1 at 2012-08-16 11:45:23 -0400
+Served asset /dependencies/uploadify.swf - 200 OK (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-16 11:45:23 -0400
+Processing by HomeController#index as */*
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/uploadify-cancel.png" for 127.0.0.1 at 2012-08-16 11:45:29 -0400
+Served asset /uploadify-cancel.png - 304 Not Modified (3ms)
+
+
+Started POST "/teste" for 127.0.0.1 at 2012-08-16 11:45:29 -0400
+
+AbstractController::ActionNotFound (The action 'new' could not be found for HomeController):
+  app/middleware/flash_session_cookie_middleware.rb:16:in `call'
+
+
+  Rendered /home/marco/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.9ms)
+
+
+Started POST "/teste" for 127.0.0.1 at 2012-08-16 11:45:29 -0400
+
+AbstractController::ActionNotFound (The action 'new' could not be found for HomeController):
+  app/middleware/flash_session_cookie_middleware.rb:16:in `call'
+
+
+  Rendered /home/marco/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started POST "/teste" for 127.0.0.1 at 2012-08-16 11:45:29 -0400
+
+AbstractController::ActionNotFound (The action 'new' could not be found for HomeController):
+  app/middleware/flash_session_cookie_middleware.rb:16:in `call'
+
+
+  Rendered /home/marco/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started POST "/teste" for 127.0.0.1 at 2012-08-16 11:45:29 -0400
+
+AbstractController::ActionNotFound (The action 'new' could not be found for HomeController):
+  app/middleware/flash_session_cookie_middleware.rb:16:in `call'
+
+
+  Rendered /home/marco/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-16 11:55:04 -0400
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 64ms
+
+ActiveRecord::StatementInvalid (Could not find table 'arquivos'):
+  app/controllers/home_controller.rb:3:in `index'
+  app/middleware/flash_session_cookie_middleware.rb:16:in `call'
+
+
+  Rendered /home/marco/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/marco/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/marco/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.4ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (151.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (122.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateArquivos (20120816154721)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "arquivos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "file_file_name" varchar(255), "file_content_type" varchar(255), "file_file_size" integer, "file_updated_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120816154721')
+  [1m[36m (136.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("arquivos")
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-16 11:55:29 -0400
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  [1m[36mArquivo Load (0.1ms)[0m  [1mSELECT "arquivos".* FROM "arquivos" [0m
+  Rendered home/index.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 137ms (Views: 57.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-16 11:55:30 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/uploadify.css?body=1" for 127.0.0.1 at 2012-08-16 11:55:30 -0400
+Served asset /uploadify.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-16 11:55:30 -0400
+Served asset /home.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-16 11:55:30 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-16 11:55:30 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.uploadify-3.1.js?body=1" for 127.0.0.1 at 2012-08-16 11:55:30 -0400
+Served asset /jquery.uploadify-3.1.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-16 11:55:30 -0400
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-16 11:55:30 -0400
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/dependencies/uploadify.swf?preventswfcaching=1345132530580" for 127.0.0.1 at 2012-08-16 11:55:30 -0400
+Served asset /dependencies/uploadify.swf - 200 OK (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-16 11:55:30 -0400
+Processing by HomeController#index as */*
+  [1m[35mArquivo Load (0.2ms)[0m  SELECT "arquivos".* FROM "arquivos" 
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/uploadify-cancel.png" for 127.0.0.1 at 2012-08-16 11:55:41 -0400
+Served asset /uploadify-cancel.png - 304 Not Modified (2ms)
+
+
+Started POST "/teste" for 127.0.0.1 at 2012-08-16 11:55:41 -0400
+Processing by HomeController#new as HTML
+  Parameters: {"Filename"=>"casa-de-madeira.jpg", "Filedata"=>#<ActionDispatch::Http::UploadedFile:0x007f7f64302038 @original_filename="casa-de-madeira.jpg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"Filedata\"; filename=\"casa-de-madeira.jpg\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/tmp/RackMultipart20120816-4344-qm0gsk>>, "Upload"=>"Submit Query"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `file_content_type`
+  [1m[35mSQL (49.2ms)[0m  INSERT INTO "arquivos" ("created_at", "file_content_type", "file_file_name", "file_file_size", "file_updated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Thu, 16 Aug 2012 15:55:41 UTC +00:00], ["file_content_type", "application/octet-stream"], ["file_file_name", "casa-de-madeira.jpg"], ["file_file_size", 86780], ["file_updated_at", Thu, 16 Aug 2012 15:55:41 UTC +00:00], ["updated_at", Thu, 16 Aug 2012 15:55:41 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (154.6ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 270ms
+
+ActionView::MissingTemplate (Missing template home/new, application/new with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :xml, :yaml, :json], :handlers=>[:erb, :builder]}. Searched in:
+  * "/home/marco/projetos/multiupload-uploadify/test/dummy/app/views"
+):
+  app/middleware/flash_session_cookie_middleware.rb:16:in `call'
+
+
+  Rendered /home/marco/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.0ms)
+
+
+Started POST "/teste" for 127.0.0.1 at 2012-08-16 11:55:42 -0400
+Processing by HomeController#new as HTML
+  Parameters: {"Filename"=>"casa-praia-recreio-b3.jpg", "Filedata"=>#<ActionDispatch::Http::UploadedFile:0x00000002c731c8 @original_filename="casa-praia-recreio-b3.jpg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"Filedata\"; filename=\"casa-praia-recreio-b3.jpg\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/tmp/RackMultipart20120816-4344-gl1yd0>>, "Upload"=>"Submit Query"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `file_content_type`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "arquivos" ("created_at", "file_content_type", "file_file_name", "file_file_size", "file_updated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 16 Aug 2012 15:55:42 UTC +00:00], ["file_content_type", "application/octet-stream"], ["file_file_name", "casa-praia-recreio-b3.jpg"], ["file_file_size", 141094], ["file_updated_at", Thu, 16 Aug 2012 15:55:42 UTC +00:00], ["updated_at", Thu, 16 Aug 2012 15:55:42 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (143.6ms)[0m  commit transaction
+Completed 500 Internal Server Error in 161ms
+
+ActionView::MissingTemplate (Missing template home/new, application/new with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :xml, :yaml, :json], :handlers=>[:erb, :builder]}. Searched in:
+  * "/home/marco/projetos/multiupload-uploadify/test/dummy/app/views"
+):
+  app/middleware/flash_session_cookie_middleware.rb:16:in `call'
+
+
+  Rendered /home/marco/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started POST "/teste" for 127.0.0.1 at 2012-08-16 11:55:42 -0400
+Processing by HomeController#new as HTML
+  Parameters: {"Filename"=>"casa_propria.jpg", "Filedata"=>#<ActionDispatch::Http::UploadedFile:0x00000002f09ec8 @original_filename="casa_propria.jpg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"Filedata\"; filename=\"casa_propria.jpg\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/tmp/RackMultipart20120816-4344-1brf312>>, "Upload"=>"Submit Query"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `file_content_type`
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "arquivos" ("created_at", "file_content_type", "file_file_name", "file_file_size", "file_updated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Thu, 16 Aug 2012 15:55:42 UTC +00:00], ["file_content_type", "application/octet-stream"], ["file_file_name", "casa_propria.jpg"], ["file_file_size", 45196], ["file_updated_at", Thu, 16 Aug 2012 15:55:42 UTC +00:00], ["updated_at", Thu, 16 Aug 2012 15:55:42 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (144.7ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 158ms
+
+ActionView::MissingTemplate (Missing template home/new, application/new with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :xml, :yaml, :json], :handlers=>[:erb, :builder]}. Searched in:
+  * "/home/marco/projetos/multiupload-uploadify/test/dummy/app/views"
+):
+  app/middleware/flash_session_cookie_middleware.rb:16:in `call'
+
+
+  Rendered /home/marco/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started POST "/teste" for 127.0.0.1 at 2012-08-16 11:55:42 -0400
+Processing by HomeController#new as HTML
+  Parameters: {"Filename"=>"casas-Bonitas-Modernas.jpg", "Filedata"=>#<ActionDispatch::Http::UploadedFile:0x0000000326b530 @original_filename="casas-Bonitas-Modernas.jpg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"Filedata\"; filename=\"casas-Bonitas-Modernas.jpg\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/tmp/RackMultipart20120816-4344-1wtho46>>, "Upload"=>"Submit Query"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `file_content_type`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "arquivos" ("created_at", "file_content_type", "file_file_name", "file_file_size", "file_updated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 16 Aug 2012 15:55:42 UTC +00:00], ["file_content_type", "application/octet-stream"], ["file_file_name", "casas-Bonitas-Modernas.jpg"], ["file_file_size", 88180], ["file_updated_at", Thu, 16 Aug 2012 15:55:42 UTC +00:00], ["updated_at", Thu, 16 Aug 2012 15:55:42 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (146.2ms)[0m  commit transaction
+Completed 500 Internal Server Error in 162ms
+
+ActionView::MissingTemplate (Missing template home/new, application/new with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :xml, :yaml, :json], :handlers=>[:erb, :builder]}. Searched in:
+  * "/home/marco/projetos/multiupload-uploadify/test/dummy/app/views"
+):
+  app/middleware/flash_session_cookie_middleware.rb:16:in `call'
+
+
+  Rendered /home/marco/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.9ms)
+
+
+Started POST "/teste" for 127.0.0.1 at 2012-08-16 11:55:42 -0400
+Processing by HomeController#new as HTML
+  Parameters: {"Filename"=>"casas-Bonitas-Modernas (1).jpg", "Filedata"=>#<ActionDispatch::Http::UploadedFile:0x007f7f64504ef8 @original_filename="casas-Bonitas-Modernas (1).jpg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"Filedata\"; filename=\"casas-Bonitas-Modernas (1).jpg\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/tmp/RackMultipart20120816-4344-vb4izm>>, "Upload"=>"Submit Query"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `file_content_type`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "arquivos" ("created_at", "file_content_type", "file_file_name", "file_file_size", "file_updated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Thu, 16 Aug 2012 15:55:42 UTC +00:00], ["file_content_type", "application/octet-stream"], ["file_file_name", "casas-Bonitas-Modernas_(1).jpg"], ["file_file_size", 88180], ["file_updated_at", Thu, 16 Aug 2012 15:55:42 UTC +00:00], ["updated_at", Thu, 16 Aug 2012 15:55:42 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (142.5ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 189ms
+
+ActionView::MissingTemplate (Missing template home/new, application/new with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :xml, :yaml, :json], :handlers=>[:erb, :builder]}. Searched in:
+  * "/home/marco/projetos/multiupload-uploadify/test/dummy/app/views"
+):
+  app/middleware/flash_session_cookie_middleware.rb:16:in `call'
+
+
+  Rendered /home/marco/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started POST "/teste" for 127.0.0.1 at 2012-08-16 11:55:43 -0400
+Processing by HomeController#new as HTML
+  Parameters: {"Filename"=>"casas-de-madeira-pre-fabricadas-7.jpg", "Filedata"=>#<ActionDispatch::Http::UploadedFile:0x00000003134310 @original_filename="casas-de-madeira-pre-fabricadas-7.jpg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"Filedata\"; filename=\"casas-de-madeira-pre-fabricadas-7.jpg\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/tmp/RackMultipart20120816-4344-1nnyq5t>>, "Upload"=>"Submit Query"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `file_content_type`
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "arquivos" ("created_at", "file_content_type", "file_file_name", "file_file_size", "file_updated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 16 Aug 2012 15:55:43 UTC +00:00], ["file_content_type", "application/octet-stream"], ["file_file_name", "casas-de-madeira-pre-fabricadas-7.jpg"], ["file_file_size", 50647], ["file_updated_at", Thu, 16 Aug 2012 15:55:43 UTC +00:00], ["updated_at", Thu, 16 Aug 2012 15:55:43 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (143.7ms)[0m  commit transaction
+Completed 500 Internal Server Error in 163ms
+
+ActionView::MissingTemplate (Missing template home/new, application/new with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :xml, :yaml, :json], :handlers=>[:erb, :builder]}. Searched in:
+  * "/home/marco/projetos/multiupload-uploadify/test/dummy/app/views"
+):
+  app/middleware/flash_session_cookie_middleware.rb:16:in `call'
+
+
+  Rendered /home/marco/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-16 11:56:14 -0400
+Processing by HomeController#index as HTML
+  [1m[36mArquivo Load (0.2ms)[0m  [1mSELECT "arquivos".* FROM "arquivos" [0m
+  Rendered home/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 29ms (Views: 13.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-16 11:56:14 -0400
+Served asset /application.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-16 11:56:14 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-16 11:56:14 -0400
+Served asset /jquery.js - 304 Not Modified (48ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-16 11:56:14 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploadify.css?body=1" for 127.0.0.1 at 2012-08-16 11:56:14 -0400
+Served asset /uploadify.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-16 11:56:14 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.uploadify-3.1.js?body=1" for 127.0.0.1 at 2012-08-16 11:56:14 -0400
+Served asset /jquery.uploadify-3.1.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-16 11:56:14 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/dependencies/uploadify.swf?preventswfcaching=1345132574501" for 127.0.0.1 at 2012-08-16 11:56:14 -0400
+Served asset /dependencies/uploadify.swf - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-16 11:56:14 -0400
+Processing by HomeController#index as */*
+  [1m[35mArquivo Load (0.3ms)[0m  SELECT "arquivos".* FROM "arquivos" 
+  Rendered home/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/uploadify-cancel.png" for 127.0.0.1 at 2012-08-16 11:56:21 -0400
+Served asset /uploadify-cancel.png - 304 Not Modified (0ms)
+
+
+Started POST "/teste" for 127.0.0.1 at 2012-08-16 11:56:21 -0400
+Processing by HomeController#new as HTML
+  Parameters: {"Filename"=>"casa-com-piscina-na-frente.jpg", "Filedata"=>#<ActionDispatch::Http::UploadedFile:0x0000000320cc60 @original_filename="casa-com-piscina-na-frente.jpg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"Filedata\"; filename=\"casa-com-piscina-na-frente.jpg\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/tmp/RackMultipart20120816-4344-1f7kcen>>, "Upload"=>"Submit Query"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `file_content_type`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "arquivos" ("created_at", "file_content_type", "file_file_name", "file_file_size", "file_updated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Thu, 16 Aug 2012 15:56:21 UTC +00:00], ["file_content_type", "application/octet-stream"], ["file_file_name", "casa-com-piscina-na-frente.jpg"], ["file_file_size", 117497], ["file_updated_at", Thu, 16 Aug 2012 15:56:21 UTC +00:00], ["updated_at", Thu, 16 Aug 2012 15:56:21 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (164.0ms)[0m  [1mcommit transaction[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 201ms (Views: 20.2ms | ActiveRecord: 164.8ms)
+
+
+Started POST "/teste" for 127.0.0.1 at 2012-08-16 11:56:21 -0400
+Processing by HomeController#new as HTML
+  Parameters: {"Filename"=>"casa-de-madeira.jpg", "Filedata"=>#<ActionDispatch::Http::UploadedFile:0x007f7f74468728 @original_filename="casa-de-madeira.jpg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"Filedata\"; filename=\"casa-de-madeira.jpg\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/tmp/RackMultipart20120816-4344-eb2dbs>>, "Upload"=>"Submit Query"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `file_content_type`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "arquivos" ("created_at", "file_content_type", "file_file_name", "file_file_size", "file_updated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 16 Aug 2012 15:56:21 UTC +00:00], ["file_content_type", "application/octet-stream"], ["file_file_name", "casa-de-madeira.jpg"], ["file_file_size", 86780], ["file_updated_at", Thu, 16 Aug 2012 15:56:21 UTC +00:00], ["updated_at", Thu, 16 Aug 2012 15:56:21 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (267.6ms)[0m  commit transaction
+  Rendered text template (0.0ms)
+Completed 200 OK in 281ms (Views: 1.0ms | ActiveRecord: 268.3ms)
+
+
+Started POST "/teste" for 127.0.0.1 at 2012-08-16 11:56:21 -0400
+Processing by HomeController#new as HTML
+  Parameters: {"Filename"=>"casa-praia-recreio-b3.jpg", "Filedata"=>#<ActionDispatch::Http::UploadedFile:0x0000000296c448 @original_filename="casa-praia-recreio-b3.jpg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"Filedata\"; filename=\"casa-praia-recreio-b3.jpg\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/tmp/RackMultipart20120816-4344-184njuj>>, "Upload"=>"Submit Query"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `file_content_type`
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "arquivos" ("created_at", "file_content_type", "file_file_name", "file_file_size", "file_updated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Thu, 16 Aug 2012 15:56:21 UTC +00:00], ["file_content_type", "application/octet-stream"], ["file_file_name", "casa-praia-recreio-b3.jpg"], ["file_file_size", 141094], ["file_updated_at", Thu, 16 Aug 2012 15:56:21 UTC +00:00], ["updated_at", Thu, 16 Aug 2012 15:56:21 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (172.3ms)[0m  [1mcommit transaction[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 186ms (Views: 0.9ms | ActiveRecord: 173.7ms)
+
+
+Started POST "/teste" for 127.0.0.1 at 2012-08-16 11:56:22 -0400
+Processing by HomeController#new as HTML
+  Parameters: {"Filename"=>"casa_propria.jpg", "Filedata"=>#<ActionDispatch::Http::UploadedFile:0x00000002dd1010 @original_filename="casa_propria.jpg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"Filedata\"; filename=\"casa_propria.jpg\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/tmp/RackMultipart20120816-4344-tilqq3>>, "Upload"=>"Submit Query"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.2ms)[0m  begin transaction
+Binary data inserted for `string` type on column `file_content_type`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "arquivos" ("created_at", "file_content_type", "file_file_name", "file_file_size", "file_updated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 16 Aug 2012 15:56:22 UTC +00:00], ["file_content_type", "application/octet-stream"], ["file_file_name", "casa_propria.jpg"], ["file_file_size", 45196], ["file_updated_at", Thu, 16 Aug 2012 15:56:22 UTC +00:00], ["updated_at", Thu, 16 Aug 2012 15:56:22 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (120.5ms)[0m  commit transaction
+  Rendered text template (0.0ms)
+Completed 200 OK in 136ms (Views: 0.8ms | ActiveRecord: 121.7ms)
+
+
+Started POST "/teste" for 127.0.0.1 at 2012-08-16 11:56:22 -0400
+Processing by HomeController#new as HTML
+  Parameters: {"Filename"=>"casas-Bonitas-Modernas.jpg", "Filedata"=>#<ActionDispatch::Http::UploadedFile:0x000000031bf208 @original_filename="casas-Bonitas-Modernas.jpg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"Filedata\"; filename=\"casas-Bonitas-Modernas.jpg\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/tmp/RackMultipart20120816-4344-1t70vln>>, "Upload"=>"Submit Query"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `file_content_type`
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "arquivos" ("created_at", "file_content_type", "file_file_name", "file_file_size", "file_updated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Thu, 16 Aug 2012 15:56:22 UTC +00:00], ["file_content_type", "application/octet-stream"], ["file_file_name", "casas-Bonitas-Modernas.jpg"], ["file_file_size", 88180], ["file_updated_at", Thu, 16 Aug 2012 15:56:22 UTC +00:00], ["updated_at", Thu, 16 Aug 2012 15:56:22 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (131.4ms)[0m  [1mcommit transaction[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 150ms (Views: 1.1ms | ActiveRecord: 132.5ms)
+
+
+Started POST "/teste" for 127.0.0.1 at 2012-08-16 11:56:22 -0400
+Processing by HomeController#new as HTML
+  Parameters: {"Filename"=>"casas-Bonitas-Modernas (1).jpg", "Filedata"=>#<ActionDispatch::Http::UploadedFile:0x000000032245b8 @original_filename="casas-Bonitas-Modernas (1).jpg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"Filedata\"; filename=\"casas-Bonitas-Modernas (1).jpg\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/tmp/RackMultipart20120816-4344-ayaxwj>>, "Upload"=>"Submit Query"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `file_content_type`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "arquivos" ("created_at", "file_content_type", "file_file_name", "file_file_size", "file_updated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 16 Aug 2012 15:56:22 UTC +00:00], ["file_content_type", "application/octet-stream"], ["file_file_name", "casas-Bonitas-Modernas_(1).jpg"], ["file_file_size", 88180], ["file_updated_at", Thu, 16 Aug 2012 15:56:22 UTC +00:00], ["updated_at", Thu, 16 Aug 2012 15:56:22 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (122.6ms)[0m  commit transaction
+  Rendered text template (0.0ms)
+Completed 200 OK in 168ms (Views: 0.7ms | ActiveRecord: 123.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-16 11:56:24 -0400
+Processing by HomeController#index as HTML
+  [1m[36mArquivo Load (0.3ms)[0m  [1mSELECT "arquivos".* FROM "arquivos" [0m
+  Rendered home/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-16 11:56:24 -0400
+Served asset /home.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-16 11:56:24 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/uploadify.css?body=1" for 127.0.0.1 at 2012-08-16 11:56:24 -0400
+Served asset /uploadify.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-16 11:56:24 -0400
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-16 11:56:24 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-16 11:56:24 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.uploadify-3.1.js?body=1" for 127.0.0.1 at 2012-08-16 11:56:24 -0400
+Served asset /jquery.uploadify-3.1.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-16 11:56:24 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/dependencies/uploadify.swf?preventswfcaching=1345132584330" for 127.0.0.1 at 2012-08-16 11:56:24 -0400
+Served asset /dependencies/uploadify.swf - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-16 11:56:24 -0400
+Processing by HomeController#index as */*
+  [1m[35mArquivo Load (0.5ms)[0m  SELECT "arquivos".* FROM "arquivos" 
+  Rendered home/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/dependencies/uploadify.swf?preventswfcaching=1345132589724" for 127.0.0.1 at 2012-08-16 11:56:29 -0400
+Served asset /dependencies/uploadify.swf - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-16 11:56:29 -0400
+Processing by HomeController#index as */*
+  [1m[36mArquivo Load (0.5ms)[0m  [1mSELECT "arquivos".* FROM "arquivos" [0m
+  Rendered home/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 28ms (Views: 24.8ms | ActiveRecord: 0.5ms)
