@@ -4,22 +4,28 @@ module MultiuploadUploadify
     
     def multiupload_field(*args)
       args = args.first
+      options = args[:options].to_a
+      parameters = args[:parameters].to_a
       script = <<-eos
-          $(document).ready(function(){
-            var data_session = new Object();
-            data_session['authenticity_token'] = '#{args[:csrf_token]||=''}';
-            data_session['#{args[:session_key]||=''}'] = '#{args[:session_key_value]||=''}';
-
-            $('##{args[:id]||='uploadify_files'}').uploadify({
-              'swf' : '#{asset_path('dependencies/uploadify.swf')}',
-              'uploader' : '#{args[:url]||='#'}',
-              'formData' : data_session,
-              'onUploadSuccess' : #{args[:upload_function] ||= 'function(file, data, response){}'},
-              'buttonText': '#{args[:label]||='Upload Files'}',
-              'removeCompleted': #{args[:removeCompleted]||=false}
-            });
+        $(document).ready(function(){
+          var data = new Object();
+        eos
+      parameters.each do |parameter|
+        script += "data['#{parameter[0].to_s}'] = '#{parameter[1].to_s}';"
+      end
+      script += <<-eos
+        $('##{args[:id]||='uploadify_files'}').uploadify({
+      eos
+      options.each do |option|
+        script += "'#{option[0].to_s}' : #{option[1].to_s},"
+      end
+      script += <<-eos
+            'uploader' : '#{args[:url]||='#'}',
+            'formData' : data,
+            'swf' : '#{asset_path('dependencies/uploadify.swf')}'
           });
-          eos
+        });
+      eos
       content_for :scripts do 
         javascript_tag do 
           raw script

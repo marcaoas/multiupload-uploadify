@@ -4,7 +4,7 @@ class HomeController < ApplicationController
 	end
 
 	def new
-		Arquivo.create(:file => params[:Filedata])
-		render :nothing => true
+		arquivo = Arquivo.create(:file => params[:Filedata])
+		render :text => arquivo.id
 	end
 end
