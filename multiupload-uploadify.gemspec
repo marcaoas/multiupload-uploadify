@@ -7,11 +7,11 @@ require "multiupload-uploadify/version"
 Gem::Specification.new do |s|
   s.name        = "multiupload-uploadify"
   s.version     = MultiuploadUploadify::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of MultiuploadUploadify."
-  s.description = "TODO: Description of MultiuploadUploadify."
+  s.authors     = ["Marco Antonio de Souza"]
+  s.email       = ["marcaoas@jera.com.br"]
+  s.homepage    = "https://github.com/marcaoas/multiupload-uploadify"
+  s.summary     = "https://github.com/marcaoas/multiupload-uploadify"
+  s.description = "This gem is for use of the plugin uploadify"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
