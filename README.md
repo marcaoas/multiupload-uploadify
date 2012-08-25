@@ -8,7 +8,7 @@ Multiupload-uploadify is a gem for multiupload using the <a href='http://www.upl
 For use the gem add this in your Gemfile
 
 ``` ruby
-gem "multiupload-uploadify", :git => 'https://github.com/marcaoas/multiupload-uploadify.git'
+gem "multiupload-uploadify", :git => 'git://github.com/marcaoas/multiupload-uploadify.git'
 ```
 Run the bundle command to install it.
 
@@ -53,11 +53,7 @@ render :text => photo.id
 
 and pass a javascript function responsible for handling the return of the request
 ``` erb
-<<<<<<< HEAD
-<%= multiupload_field :url => new_photo_path, :upload_function => 'myFunction' %>
-=======
 <%= multiupload_field :url => new_photo_path, :options => { :onUploadSuccess =>  'myFunction' %>
->>>>>>> hotfix/correcoes_script_devise
 <script type="text/javascript">
 function myFunction(file, data, response){
 	alert(data);
