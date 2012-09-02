@@ -5,7 +5,7 @@ Multiupload-uploadify is a gem for multiupload using the <a href='http://www.upl
 
 ###Getting started
 
-For use the gem add this in your Gemfile
+To gem add this to your Gemfile
 
 ``` ruby
 gem "multiupload-uploadify", :git => 'git://github.com/marcaoas/multiupload-uploadify.git'
@@ -24,26 +24,26 @@ Add this in your application.js
 //= provide dependencies
 ```
 
-and this in your application.css
+and this to your application.css
 ``` css
 *= require uploadify
 ```
 
-For use the muptiupload gem call the helper method in your view
+To use the muptiupload gem  you can use the helper method in your view
 ``` erb
 <%= multiupload_field :url => new_photo_path %>
 ```
 and add this in your layout file
 ``` erb
-<%= content_fot :scripts if content_for? :scripts %>
+<%= content_for :scripts if content_for? :scripts %>
 ```
-and in yout controller you receive the files through the parameter Filedata
+and in your controller you can get the files through the Filedata param
 
 ``` ruby
 Photo.create(:picture => params[:Filedata])
 ```
 
-if you want know the id of the model you need do this
+if you want to know the id of the model you need do this
 
 in your controller
 ``` ruby
