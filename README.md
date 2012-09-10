@@ -5,7 +5,7 @@ Multiupload-uploadify is a gem for multiupload using the <a href='http://www.upl
 
 ###Getting started
 
-To gem add this to your Gemfile
+To use add this to your Gemfile
 
 ``` ruby
 gem "multiupload-uploadify"
@@ -66,7 +66,7 @@ any other parameter of the plugin you can pass using
 <%= multiupload_field :url => new_photo_path, :options => { :buttonText =>  '"Upload Photos"' %>
 ```
 
-### devise + multiupload-uploadfy
+### devise + multiupload-uploadify
 
 if you use the devise gem you need pass the parameters of your session for authentication
 you can do it like this:
