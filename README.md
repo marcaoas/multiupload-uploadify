@@ -8,7 +8,7 @@ Multiupload-uploadify is a gem for multiupload using the <a href='http://www.upl
 To gem add this to your Gemfile
 
 ``` ruby
-gem "multiupload-uploadify", :git => 'git://github.com/marcaoas/multiupload-uploadify.git'
+gem "multiupload-uploadify"
 ```
 Run the bundle command to install it.
 
