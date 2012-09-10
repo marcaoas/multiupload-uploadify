@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    multiupload-uploadify (0.0.1)
+    multiupload-uploadify (0.0.2)
       rails (~> 3.2.6)
 
 GEM
