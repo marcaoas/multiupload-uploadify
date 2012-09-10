@@ -1,0 +1,145 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Multiupload-uploadify</title>
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Multiupload-uploadify</h1>
+    </header>
+    <div id="container">
+      <p class="tagline"></p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/marcaoas/multiupload-uploadify/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/marcaoas/multiupload-uploadify/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/marcaoas/multiupload-uploadify" class="code">View Multiupload-uploadify on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>multiupload-uploadify</h1>
+
+<p>Multiupload-uploadify is a gem for multiupload using the <a href="http://www.uploadify.com/">uploadify</a> plugin</p>
+
+<h3>Getting started</h3>
+
+<p>To gem add this to your Gemfile</p>
+
+<div class="highlight"><pre><span class="n">gem</span> <span class="s2">"multiupload-uploadify"</span>
+</pre></div>
+
+<p>Run the bundle command to install it.</p>
+
+<p>Now you need run the generate command</p>
+
+<div class="highlight"><pre><span class="go">rails generate multiupload_uploadify</span>
+</pre></div>
+
+<p>Add this in your application.js</p>
+
+<div class="highlight"><pre><span class="c1">//= require jquery.uploadify-3.1</span>
+<span class="c1">//= provide dependencies</span>
+</pre></div>
+
+<p>and this to your application.css</p>
+
+<div class="highlight"><pre><span class="o">*=</span> <span class="nt">require</span> <span class="nt">uploadify</span>
+</pre></div>
+
+<p>To use the muptiupload gem  you can use the helper method in your view</p>
+
+<div class="highlight"><pre><span class="cp">&lt;%=</span> <span class="n">multiupload_field</span> <span class="ss">:url</span> <span class="o">=&gt;</span> <span class="n">new_photo_path</span> <span class="cp">%&gt;</span><span class="x"></span>
+</pre></div>
+
+<p>and add this in your layout file</p>
+
+<div class="highlight"><pre><span class="cp">&lt;%=</span> <span class="n">content_for</span> <span class="ss">:scripts</span> <span class="k">if</span> <span class="n">content_for?</span> <span class="ss">:scripts</span> <span class="cp">%&gt;</span><span class="x"></span>
+</pre></div>
+
+<p>and in your controller you can get the files through the Filedata param</p>
+
+<div class="highlight"><pre><span class="no">Photo</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="ss">:picture</span> <span class="o">=&gt;</span> <span class="n">params</span><span class="o">[</span><span class="ss">:Filedata</span><span class="o">]</span><span class="p">)</span>
+</pre></div>
+
+<p>if you want to know the id of the model you need do this</p>
+
+<p>in your controller</p>
+
+<div class="highlight"><pre><span class="n">photo</span> <span class="o">=</span> <span class="no">Photo</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="ss">:picture</span> <span class="o">=&gt;</span> <span class="n">params</span><span class="o">[</span><span class="ss">:Filedata</span><span class="o">]</span><span class="p">)</span>
+<span class="n">render</span> <span class="ss">:text</span> <span class="o">=&gt;</span> <span class="n">photo</span><span class="o">.</span><span class="n">id</span>
+</pre></div>
+
+<p>and pass a javascript function responsible for handling the return of the request</p>
+
+<div class="highlight"><pre><span class="cp">&lt;%=</span> <span class="n">multiupload_field</span> <span class="ss">:url</span> <span class="o">=&gt;</span> <span class="n">new_photo_path</span><span class="p">,</span> <span class="ss">:options</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="ss">:onUploadSuccess</span> <span class="o">=&gt;</span>  <span class="s1">'myFunction'</span> <span class="cp">%&gt;</span><span class="x"></span>
+<span class="x">&lt;script type="text/javascript"&gt;</span>
+<span class="x">function myFunction(file, data, response){</span>
+<span class="x">    alert(data);</span>
+<span class="x">}</span>
+<span class="x">&lt;/script&gt;</span>
+</pre></div>
+
+<p>any other parameter of the plugin you can pass using</p>
+
+<div class="highlight"><pre><span class="cp">&lt;%=</span> <span class="n">multiupload_field</span> <span class="ss">:url</span> <span class="o">=&gt;</span> <span class="n">new_photo_path</span><span class="p">,</span> <span class="ss">:options</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="ss">:buttonText</span> <span class="o">=&gt;</span>  <span class="s1">'"Upload Photos"'</span> <span class="cp">%&gt;</span><span class="x"></span>
+</pre></div>
+
+<h3>devise + multiupload-uploadfy</h3>
+
+<p>if you use the devise gem you need pass the parameters of your session for authentication
+you can do it like this:</p>
+
+<div class="highlight"><pre><span class="cp">&lt;%=</span> <span class="n">multiupload_field</span> <span class="ss">:url</span> <span class="o">=&gt;</span> <span class="n">new_photo_path</span><span class="p">,</span> <span class="ss">:parameters</span> <span class="o">=&gt;</span> <span class="p">{</span><span class="no">Rails</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">session_options</span><span class="o">[</span><span class="ss">:key</span><span class="o">]</span> <span class="o">=&gt;</span> <span class="n">cookies</span><span class="o">[</span><span class="no">Rails</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">session_options</span><span class="o">[</span><span class="ss">:key</span><span class="o">]]</span> <span class="p">}</span> <span class="cp">%&gt;</span><span class="x"></span>
+</pre></div>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/marcaoas" class="avatar"><img src="https://secure.gravatar.com/avatar/ecbfe73b8b79dafefbea9ce0abac53ab?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" width="48" height="48"/></a> <a href="https://github.com/marcaoas">marcaoas</a> maintains <a href="https://github.com/marcaoas/multiupload-uploadify">Multiupload-uploadify</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="http://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/marcaoas/multiupload-uploadify/tarball/master" class="tar">tar</a><a href="https://github.com/marcaoas/multiupload-uploadify/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("marcaoas");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+</body>
+</html>
