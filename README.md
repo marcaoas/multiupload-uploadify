@@ -71,5 +71,5 @@ any other parameter of the plugin you can pass using
 if you use the devise gem you need pass the parameters of your session for authentication
 you can do it like this:
 ``` erb
-<%= multiupload_field :url => new_photo_path, :parameters => {Rails.application.config.session_options[:key] => cookies[Rails.application.config.session_options[:key]] } %>
+<%= multiupload_field :url => new_photo_path, :parameters => {Rails.application.config.session_options[:key] => "'#{cookies[Rails.application.config.session_options[:key]]}'" } %>
 ```
